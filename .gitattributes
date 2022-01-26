@@ -1,0 +1,5 @@
+# normalization in the repository
+*.cpp  text
+*.cu   text
+*.h    text
+*.txt  text
