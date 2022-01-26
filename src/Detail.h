@@ -126,7 +126,7 @@ namespace Vortigaunt {
 
                 unsigned int relativeOddMask = __ballot_sync(peerMaskTemp, isRelativeOddLane);
 
-                peerMaskTemp &= ~relativeOddMask;
+                peerMaskTemp ^= relativeOddMask;
                 relativeIdx >>= 1;
             }
 
